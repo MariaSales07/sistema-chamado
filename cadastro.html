@@ -4,56 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
     <div class="container">
-        <div class="left-panel">
-            <div class="avatar">
-                <div class="head">
-                    <div class="hair"></div>
-                    <div class="face">
-                        <div class="eyes">
-                            <div class="eye"></div>
-                            <div class="eye"></div>
-                        </div>
-                        <div class="smile"></div>
-                    </div>
-                </div>
-                <div class="body">
-                    <div class="shirt">
-                        <div class="collar"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="register-button">Cadastrar-se</button>
-            <button class="back-button">Voltar</button>
+        <div class="left-side">
+            <button class="Cadastrar-se"><a href="home.html">Cadastrar-se</a></button>
+            <button class="Voltar"><a href="index.html">Voltar</a></button>
         </div>
-        <div class="right-panel">
-            <div class="form-card">
-                <h2>Cadastro</h2>
-                <div class="input-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome">
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Digite seu email">
-                </div>
-                <div class="input-group">
-                    <label for="area">Área</label>
-                    <input type="text" id="area" placeholder="Sua área de interesse">
-                </div>
-                <div class="input-group">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Crie uma senha">
-                </div>
-                <div class="icon">
-                    <div class="ghost-face">
-                        <div class="eye left-eye"></div>
-                        <div class="eye right-eye"></div>
-                    </div>
-                </div>
+        <div class="right-side">
+            <h2>Cadastro</h2>
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="input-group">
+                <label for="area">Área</label>
+                <input type="text" id="area" name="area">
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha">
             </div>
         </div>
     </div>

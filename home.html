@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
-    <title>Pagina Inicial</title>
+    <title>Novo Chamado</title>
+    <link rel="stylesheet" href="home.css">
 </head>
-
 <body>
     <div class="container">
-        <h1>Seja bem vindo, Maria!</h1>
+        <header class="main-header">
+            <div class="left-header">
 
-        <p>Aqui você pode registrar suas solicitações de
-            <!-- SPAN QUEBRA AS LINHAS -->
-            <span>forma rápida e acompanhar o status em tempo</span>
-            <span>real. Nossa equipe está pronta para atendê-lo e </span>
-            resolver seu problema com eficiência.
-        </p>
-
-        <!-- SUBTITULO -->
-        <h2>Escolha a opção desejada</h2>
-        
-        <!-- DIV PARA AGRUPAR BOTÕES -->
-        <div class="botoes">
-            <!-- BOTÕES ON CLICK -->
-            <button onclick="window.location.href='#'">Abrir Chamado</button>
-            <button onclick="window.location.href='#'">Meus Chamados</button>
-        </div>
+                <a href="#">Sair</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chamado.html">Chamados</a></li>
+                    <li><a href="ca">Registros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="new-ticket-form">
+            <h2>Novo Chamado</h2>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoria</label>
+                <div class="radio-group">
+                    <input type="radio" id="aberto" name="categoria" value="aberto">
+                    <label for="aberto">Aberto</label>
+                    <input type="radio" id="em-atendimento" name="categoria" value="em-atendimento">
+                    <label for="em-atendimento">Em atendimento</label>
+                    <input type="radio" id="finalizado" name="categoria" value="finalizado">
+                    <label for="finalizado">Finalizado</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto">
+            </div>
+            <div class="form-group description-group">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao"></textarea>
+            </div>
+            <button type="submit" class="submit-button"><a href="chamado.html">Criar Chamado </a></button>
+        </main>
     </div>
 </body>
-
 </html>
