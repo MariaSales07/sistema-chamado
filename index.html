@@ -2,34 +2,41 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="trabalho" content="width=device-width, initial-scale=1.0">
-    <title>Help Desk</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="container">
-        <header class="help-desk-header">
+        <header class="header">
             <div class="contact-info">
-                <span>(XX) XXXX-XXXX</span>
-                <span>helpdesk@gmail.com</span>
+                <p>(XX) XXXX-XXXX</p>
+                <p>helpdesk@gmail.com</p>
             </div>
-            <h1>HELP DESK</h1>
+            <div class="title">HELP DESK</div>
         </header>
-        <main class="login">
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha">
-            </div>
-            <div class="buttons">
-                <div class="buttons">
-                    <button class="entrar">Entrar</button>
-                    <a href="cadastro.html"><button class="cadastrar">Cadastrar-se</button></a>
+    
+        <div class="login-container">
+            <form class="login-form" action="" method="post">
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
                 </div>
-            </div>
-
-        </main>
-    </div>
+    
+                <div class="form-field">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+    
+                <div class="buttons-container">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                <a href="cadastro.html" class="btn btn-secondary">Cadastrar-se</a>
+            </form>
+         </div>
 </body>
 </html>
+
+ 

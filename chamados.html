@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAMADOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/chamados.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- DIV IMAGEM / ICONE -->
+        <div class="container-fluid">
+            <div id="homee">
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-user"></i></a>
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link-active" aria-current="page" href="#">CONTA</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+
+        <!-- DIV LINKS -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-house"></i>HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-phone"></i>Sair</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket"></i>Sair</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-door-open"></i>Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+
+        <!-- TITULO -->
+        <h1 class="texto-inicio">Novo Chamado</h1>
+        <hr>
+
+        <div class="container">
+        <!-- FORM ABERTURA DE CHAMADO -->
+        <form action="" method="post">
+            <!-- CAIXAS DE TEXTO -->
+            <label for="cliente">CLIENTE</label>
+            <input type="text" name="cliente" id="cliente">
+
+            <label for="categoria">CATEGORIA</label>
+            <input type="text" name="categoria" id="categoria">
+
+            <label for="status">STATUS</label>
+            <!-- DIV PARA ALINHAMENTO DOS INPUTS RADIO -->
+            <div id="ajuste">
+                <input type="radio" name="aberto" id="aberto">
+                <label for="aberto">ABERTO</label>
+
+                <input type="radio" name="atendimento" id="atendimento">
+                <label for="atendimento">EM ATENDIMENTO</label>
+
+                <input type="radio" name="fechado" id="fechado">
+                <label for="fechado">FECHADO</label>
+            </div>
+
+             <!-- CAIXAS DE TEXTO -->
+            <label for="assunto">ASSUNTO</label>
+            <input type="text" name="assunto" id="assunto">
+
+             <!-- CAIXA DE TEXTO MAIOR -->
+            <label for="descricao">DESCRIÇÃO</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+
+             <!-- DIV PARA ALINHAMENTO DOS BOTÕES -->
+            <div>
+                <button type="submit">SALVAR</button>
+                <button onclick="window.location.href='#'">Voltar</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
